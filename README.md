@@ -16,14 +16,13 @@ src/components/Country-Suggest.vue
 ```
 
 
-# Usage
-```
-<template>
-  <div id="app">
-    <CountrySuggest />
-  </div>
-</template>
-```
+# Properties
+
+| Property  | Type            | Default                                                        | Description                                                                                   | Optional |
+|-----------|-----------------|----------------------------------------------------------------|-----------------------------------------------------------------------------------------------|----------|
+| apiURL    | String          | https://restcountries.eu/rest/v2/name/{name}?fields=name;flag; | REST endpoint for search countries by name. Value must be placed instead of {name} substring. | true     |
+| flagField | String|Function | flag                                                           | Property name that uses to get country name from recieved object.                             | true     |
+| delay     | Number          | 600                                                            | Delay between calls to endpoint in milliseconds.                                              | true     |
 
 ## Install example project
 ```
