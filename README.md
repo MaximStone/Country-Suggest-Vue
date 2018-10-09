@@ -6,6 +6,25 @@ Vue list of countries with flags, works as component.
 
 src/components/Country-Suggest.vue
 
+# Usage
+```
+<template>
+  <div id="app">
+    <CountrySuggest />
+  </div>
+</template>
+```
+
+
+# Usage
+```
+<template>
+  <div id="app">
+    <CountrySuggest />
+  </div>
+</template>
+```
+
 ## Install example project
 ```
 yarn install

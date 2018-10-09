@@ -3,6 +3,9 @@
 exports[`Country Suggestion input tests Components renders correctly 1`] = `
 <div
   class="autocomplete"
+  flagfieldfunction="function flagFieldFunction(country) {
+    return country.flag;
+  }"
 >
   <input
     type="text"
@@ -18,6 +21,9 @@ exports[`Country Suggestion input tests Components renders correctly 1`] = `
 exports[`Country Suggestion input tests Suggestions for "German" 1`] = `
 <div
   class="autocomplete"
+  flagfieldfunction="function flagFieldFunction(country) {
+    return country.flag;
+  }"
 >
   <input
     type="text"
@@ -51,6 +57,9 @@ exports[`Country Suggestion input tests Suggestions for "German" 1`] = `
 exports[`Country Suggestion input tests Suggestions for "sw" 1`] = `
 <div
   class="autocomplete"
+  flagfieldfunction="function flagFieldFunction(country) {
+    return country.flag;
+  }"
 >
   <input
     type="text"

@@ -1,7 +1,11 @@
 import CountrySuggest from '@/components/Country-Suggest.vue'
 import { shallowMount } from '@vue/test-utils'
 
-let testProps = { apiURL: 'https://restcountries.eu/rest/v2/name/{name}?fields=name;flag;', flagField: 'flag' }
+let testProps = { apiURL: 'https://restcountries.eu/rest/v2/name/{name}?fields=name;flag;',
+  flagField: 'flag',
+  flagFieldFunction: function (country) {
+    return country.flag
+  } }
 
 describe('Country Suggestion input tests', () => {
   it('Empty state after render', () => {
@@ -51,12 +55,30 @@ describe('Country Suggestion input tests', () => {
     }, 1000)
   })
 
+  it('Use function type for flagField', (done) => {
+    const wrapper = shallowMount(CountrySuggest, {
+      propsData: {
+        flagField: testProps.flagFieldFunction
+      }
+    })
+    const textInput = wrapper.find('input[type="text"]')
+    textInput.setValue('German')
+
+    setTimeout(() => {
+      expect(wrapper.vm.suggestions).toHaveLength(1)
+      const option = wrapper.find('li.autocomplete-result img')
+      expect(option.attributes('src')).toBe('https://restcountries.eu/data/deu.svg')
+      done()
+    }, 1000)
+  })
+
   it('Suggestions for "sw"', (done) => {
     const wrapper = shallowMount(CountrySuggest, {
       propsData: {
         ...testProps
       }
     })
+
     const textInput = wrapper.find('input[type="text"]')
     textInput.setValue('sw')
 
