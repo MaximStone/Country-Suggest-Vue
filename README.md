@@ -1,8 +1,8 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
+
 # Country-Suggest-Vue
 Vue list of countries with flags, works as component.
-
-[!(https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://opensource.org/licenses/MIT)
-[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest)
 
 src/components/Country-Suggest.vue
 
