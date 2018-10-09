@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Country Suggestion input tests Components renders correctly 1`] = `
+<div
+  class="autocomplete"
+>
+  <input
+    type="text"
+  />
+   
+  <ul
+    class="autocomplete-results"
+    style="display: none;"
+  />
+</div>
+`;
+
+exports[`Country Suggestion input tests Suggestions for "German" 1`] = `
+<div
+  class="autocomplete"
+>
+  <input
+    type="text"
+  />
+   
+  <ul
+    class="autocomplete-results"
+    style=""
+  >
+    <li
+      class="autocomplete-result"
+    >
+      <img
+        src="https://restcountries.eu/data/deu.svg"
+      />
+       
+      <span>
+        <span
+          "=""
+          class="bold"
+        >
+          German
+        </span>
+        y
+      </span>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Country Suggestion input tests Suggestions for "sw" 1`] = `
+<div
+  class="autocomplete"
+>
+  <input
+    type="text"
+  />
+   
+  <ul
+    class="autocomplete-results"
+    style=""
+  >
+    <li
+      class="autocomplete-result"
+    >
+      <img
+        src="https://restcountries.eu/data/bwa.svg"
+      />
+       
+      <span>
+        Bot
+        <span
+          "=""
+          class="bold"
+        >
+          sw
+        </span>
+        ana
+      </span>
+    </li>
+    <li
+      class="autocomplete-result"
+    >
+      <img
+        src="https://restcountries.eu/data/swz.svg"
+      />
+       
+      <span>
+        <span
+          "=""
+          class="bold"
+        >
+          Sw
+        </span>
+        aziland
+      </span>
+    </li>
+    <li
+      class="autocomplete-result"
+    >
+      <img
+        src="https://restcountries.eu/data/swe.svg"
+      />
+       
+      <span>
+        <span
+          "=""
+          class="bold"
+        >
+          Sw
+        </span>
+        eden
+      </span>
+    </li>
+    <li
+      class="autocomplete-result"
+    >
+      <img
+        src="https://restcountries.eu/data/che.svg"
+      />
+       
+      <span>
+        <span
+          "=""
+          class="bold"
+        >
+          Sw
+        </span>
+        itzerland
+      </span>
+    </li>
+  </ul>
+</div>
+`;
